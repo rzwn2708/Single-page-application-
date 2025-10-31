@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder SPA</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="spa.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <h2>Recipe Finder</h2>
+        </div>
+        <ul class="nav-right">
+            <li><a href="#"><span class="home-icon">🏠</span> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <input type="text" id="search-box" placeholder="Search your recipe...">
+        <div id="recipes"></div>
+    </main>
+
+    <!-- Modal -->
+    <div id="recipe-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Recipe Image">
+            <h3>Ingredients</h3>
+            <ul id="modal-ingredients"></ul>
+            <h3>Instructions</h3>
+            <p id="modal-instructions"></p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="spa.js"></script>
+</body>
+</html>
